@@ -1,0 +1,198 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333333;
+    text-align: justify;
+  }
+  
+  h1, h2, h3,h4 {
+    color: #ca1111;
+  }
+  h5{
+    padding-bottom: 2vh;
+    color: #e4e1e1;
+    font-weight: 900;
+  }
+  a {
+    color: #838285;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #ca1111;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #111111;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #ca1111;
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Contenido principal */
+  main {
+    padding: 20px;
+  }
+  
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .galeria img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .Acerca__del__juego,
+  .Como__jugar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .Acerca__del__juego > div,
+  .Como__jugar > div {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .Acerca__del__juego h2,
+  .Como__jugar h2 {
+    color: #ca1111;
+  }
+  
+  .Acerca__del__juego ul,
+  .Como__jugar ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  .img_exp{
+    width: 35%;
+  }
+  .apuesta{
+    padding: 0 calc(1.5vw + 1.5vh);
+  }
+  .reglas li{
+    margin-top: calc(1.25vw + 1.25vh);
+  }
+  .intern_ul{
+    list-style-type: none;
+  }
+ .intern_ul li:before {
+    content: "•"; /* Utiliza un carácter de viñeta personalizado */
+    color: red; /* Cambia el color a rojo */
+    display: inline-block;
+    width: 1em; /* Ajusta el ancho según tus preferencias */
+    margin-left: -1em; /* Desplaza el carácter hacia la izquierda */
+  }
+  .intern_li{
+    margin-top: calc(1.25vw + 1.25vh);
+  }
+  .conquista{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Pie de página */
+  footer {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+  }
+  #Componentes ul li{
+    padding: 1.5vh 0;
+  }
+  #Preparacion ul li{
+    padding: 1.5vh 0;
+  }
+  .creditos{
+    text-align: start;
+    padding: 1vh 4vw;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media only screen and (max-width: 700px) {
+    header{
+        width: 100vw;
+        padding: 0;
+        padding-top: 2vh;
+        
+    }
+    nav{
+        width: 100vw;
+        padding: 0;
+        padding-bottom: 0.8vh;
+
+    }
+    main{
+        padding: 4.2vw;
+
+    }
+    nav ul li a {
+      font-size: 4vw;
+    }
+    p{
+        line-height: 3.25vh;
+    }
+    li{
+        margin-top: calc(1.25vw + 1.25vh);
+        margin-left: -5vw;
+    
+      }
+    .img_exp{
+        width: 80%;
+      }
+    .Acerca__del__juego > div,
+    .Como__jugar > div {
+        width: 100vw;
+        padding: 0;
+    }
+    footer{
+        flex-direction: column;
+    }
+  }

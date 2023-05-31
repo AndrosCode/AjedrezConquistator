@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /index.html
+Allow: /estilos.css
+Sitemap: https://www.ejemplo.com/sitemap.xml
